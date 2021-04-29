@@ -1,262 +1,401 @@
-/* body styles for Amie Carter Consulting */
-body  {
-    background-color: #a1b5c3;
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide; 
+  /* The duration of the animation */
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible; 
 }
-a {
-    text-decoration: none;
-    color:inherit;
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  } 
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
 }
 
 
-header {
-    height: 650px;
-}
+/*************** nav bar ************/
 
-#nav {
-    float: right; 
-    padding: 10px 25px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    padding-bottom: 0px;
-    line-height: 0px;
-    margin-top: 190px;
-    animation: nav_move 2s ease forwards;
-}
+.navbar {
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+  }
+  .navbar li a  {
+    color: #777878 ;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #777878 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #f5f6f7 !important;
+  }
+
+/********************* header ************/
 
 @keyframes nav_move {
     from { margin-top: 180px; opacity: 0.2; }
     to { margin-top: 210px; opacity: 1; }
 }
-
-
-#nav ul li {
-    padding-top: 40px;
-    padding-right: 20px;
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: lighter;
-    color: #5b5b5b;
+div.jumbotron {
+    background-color: #a1b5c3;
+    padding-bottom: 0px;
 }
-li:hover {
-    opacity: 0.7;
-}
-
-.hover_space h1 {
+.jumbotron h1 {
+    font-size: 55px;
+    line-height: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     opacity: 0.5;
     background-color: #f5f6f7;
-    height: 225px;
-    width: 65%;
-    float: right;
-    clear: right;
-    color: #777878;
-    font-size: 55px;
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-    padding-top: 60px;
-    margin-top: 0px;
     text-align: center;
     animation: header_move 2s ease forwards;
 }
-@keyframes header_move {
-    from { margin-top: 25px; margin-right: 5px; opacity: 0.2;}
-    to { margin-top: 0px; margin-right: 35px; opacity: 1;}
+h1{
+    font-size: 100px;   
 }
-
-h1 span {   
-    font-family: Source Serif Variable;
-    font-size: 125px;
-    line-height: 80px;
+div#name {
+    margin-top: -50px;
+}
+.jumbotron h2 {
     color: #3f3f3f;
 }
 
+@keyframes header_move {
+    from { margin-top: 25px; margin-right: 5px; opacity: 0.2;}
+    to { margin-top: 0px; margin-right: 0px; opacity: 1;}
+}
+
+
 #amie_image {
-    width: 490px;
-    margin-top: 48px;
-    position: absolute;
-    z-index: -1;
     animation: image_fade_in 2s ease forwards;
+    max-width: 100%;
 }
 @keyframes image_fade_in {
     from {margin-left: 14px; opacity: 0.2;}
-    to {margin-left: 34px; opacity: 1;}
+    to {margin-left: 0px; opacity: 1;}
 }
 
 
-h3 {
-    margin-bottom: 0px;
-    margin-left: 110px; 
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-    color:#f5f6f7;
-    font-size: 75px;
-    line-height: 100px; 
-    animation: heads 2s ease forwards;
-    color:#f5f6f7;
-}
-@keyframes heads {
-    from { margin-top:60px;}
-    to { margin-top:40px;}
-}
-/*********************************************************************** Services */
-.services {
-    overflow: auto;
+/************************ Services ******/
+
+div#services {
     background-color: #f5f6f7;
-    padding-top: 50px;
-    padding-bottom: 50px;  
-    animation: services 2s ease forwards;
+    color: #777878;
 }
-@keyframes services {
-    from { opacity: 0.5;}
-    to { opacity: 1;}
+div#services p {
+    font-size: 16px;
 }
-
-
-.services div {
-    width: 25%;
-    border-style: solid;
-    border-color: #c7d8c6;
-    border-width: 6px;
-    float: left;
-    margin-left: 5.8%;
-    margin-right: 0%;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 50px;
-    font-family: Calibri;
-    color: #5b5b5b;
+div#services h4 {
+    font-size: 20px;
 }
-
-.services div:hover {
+span.small-logo {
+    font-size: 30px;
+    color: #a1b5c3;
+}
+div#services div.col-sm-4 {
+    padding: 15px 15px;
+}
+div#services div.col-sm-4 div {
+    border: solid 4px #c7d8c6;
+    padding: 15px 15px;
+}
+div#services div.col-sm-4 div:hover {
     border-color: #a1b5c3;
     opacity: 0.8;
 }
-i {
-    font-size: 90px;
-    padding-top: 70px;
-}
-div #motivational {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-}
 
-div #trainings {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-}
-div #consulting {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-}
-/******************************************************************** About */
-#about_amie {
-    height: 485px;
-    background-color: #f5f6f7;
-    border-width: 10px;
-    border-color: #c7d8c6;
-    border-style: solid;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-#about_amie p {
-    font-family: source serif variable;
-    font-size: 40px;
-    line-height: 60px;
-    color: #5b5b5b;
-    font-weight: 400;
-    padding: 10px 0px 0px 50px;
-    width: 45%;
-    float: left;
-}
-/****************************************************************** Resources */
-#resources {
-    overflow: auto;
-    background: none;
-    border-width: 10px;
-    border-color: #c7d8c6;
-    border-style: solid; 
-    align-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-div.resource:hover {
-    background: #c7d8c6;
-}
-.resource {
-    width: 28.8%;
-    overflow: initial;
-    background-color: #f5f6f7;
-    font-family: source serif variable;
-    color: #777878;
-    font-size: 40px;
-    line-height: 50px;
-    float: left;
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: center;
-}
+/*************************** About *******/
 
-.resource p {
-    margin-top: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.resource h4 {
-    font-size: 55px;
-    line-height: 70px;
-    font-family: 'Roboto', sans-serif;
-    color: #5b5b5b;
-    margin: 25px 0px 0px 0px;
-}
-#more_link p:hover {
-    background: #c7d8c6;
-}
-#more_link p {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 40px;
-    color: #777878;
-    text-align: center;
-    background-color: #f5f6f7;
-    float: left;
-    clear: left;
-}
-/***************************************************************** Contact */
-#contact {
-    height: 330px;
-    background-color: #f5f6f7;
-    text-align: center;
-}
-#contact p {
-    font-size: 65px;
-    line-height: 65px;
-    color: #5b5b5b;
-    font-family: source serif variable;
-    padding-top: 70px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-#contact h3 {
-    color: #5b5b5b;
-    font-size: 85px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 30px;
-}
-
-
-footer {
-    font-family: 'Cormorant Upright', serif;
+div#about h2 {
     color: #f5f6f7;
-    font-size: 70px;
     text-align: center;
+}
+div#about div.col-sm-12 {  
+    padding: 15px 15px;  
+    background-color: #f5f6f7;
+    border-bottom: solid 4px #c7d8c6;
+    border-top: solid 4px #c7d8c6;
+}
+div#about div.col-sm-12 div { 
+    background-color: #f5f6f7;
+}
+div#about div#row {
+    padding: 10px 10px;
+}
+div#about p {
+    font-size: 17px;
+    padding-top: 15px;
+    color: #777878;
+}
+.medium-logo {
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    color: #c7d8c6;
+}
+div #arrow.col-sm-6.text-center {
+    border: none;
+}
+
+/*********************** Resources ******/
+
+div#resources {
+    margin: 15px 15px;
+    color: #777878;
+    padding-bottom: 50px;
+}
+div#resources div.row div.col-sm-4 div.source:hover {
+    background-color: #c7d8c6;
+}
+div#resources h2 {
+    text-align: center;
+    color: #f5f6f7;
+}
+div#resources h3 {
+    text-align: center;
+    font-size: 22px;
+    color: #777878;
+    font-weight: bold;
+    padding-top: 10px;
+}
+div#resources a {
+    color: inherit;
+    text-decoration: none;
+}
+div.source p {
+    line-height: 30px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+div#resources div.row {
+    border: solid 4px #c7d8c6;
+}
+div#resources div.row div.col-sm-4 {
+    margin: 15px 15px;
+    background: #f5f6f7;
+}
+div.source p {
+    max-height: 175px;
+    overflow: hidden;
+}
+div.source {
+    max-height: 290px;
+    overflow: hidden;
+}
+
+
+/*********************** Contact *******/
+
+div#contact {
+    background: #777878;
+    padding-bottom: 35px;
+}
+div#contact h2{
+    text-align: center;
+    color: #777878;
+    color: #f5f6f7;
+}
+div#contact p {
+    font-size: 20px;
+    color: #f5f6f7;
+    background-color: #777878;
+    padding: 30px 0px;
+}
+div#contact p span {
+    font-size: 25px;
+    color: #c7d8c6;
+}
+div#contact div {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+div#contact a {
+    color: #a1b5c3;
+}
+
+
+
+
+
+@media screen and (min-width: 765px) {   /******************* Tablet styles********************/
+
+
+    div#services h2, div#about h2, div#resources h2, div#contact h2{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+
+    div#name {
+        margin-left: -50px;
+        padding-top: 15%;
+    }
+    div#name h1 {
+        padding-top: 12%;
+        padding-bottom: 10%;
+    }
+    div#name h1 {
+        font-size: 55px;
+    }
+    .jumbotron h2 {
+        font-size: 35px;
+        text-align: right;
+    }
+
+
+    div#services h4 {
+        font-size: 25px;
+    }
+    div#services p {
+        font-size: 18px;
+    }
+    span.small-logo {
+        font-size: 40px;
+    }
+
+
+    div#about p {
+        font-size: 20px;
+    }
+    div#demo.collapse {
+        display: inherit;
+    }
+    
+    div#arrow {
+        display: none;
+    }
+
+
+
+    div#resources {
+        margin: 0px 0px;
+    }
+    div#resources div.row {
+        border: solid 4px #c7d8c6;
+        margin: 15px 1%;
+    }
+    div#resources div.row div.col-sm-4 {
+        background-color: #a1b5c3;
+        margin: 0px;
+    }
+    div#resources div.row div.col-sm-4 div.source {
+        margin: 15px 0px;
+        padding: 15px 15px -10px 15px;
+        background-color: #f5f6f7;
+    }
+    div#resources h3 {
+        margin: 10px 0px 10px 0px;
+    }
+    div.source p {
+        padding: 5px 15px 5px 15px;
+        margin-bottom: 15px;
+        max-height: 270px;
+    }
+
+
+    div#contact div {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    div#contact p {
+        font-size: 30px;
+    }
+    div#contact p span {
+        font-size: 40px;
+    }
+    div#contact div#quote {
+        margin-top: 6%;
+    }
+    div#contact a {
+        text-decoration: none;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1200px) {      /******** Laptop styles***********/
+
+    div#services h2, div#about h2, div#resources h2, div#contact h2{
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+
+    div#name h1 {
+        font-size: 85px;
+    }
+    .jumbotron h2 {
+        font-size: 55px;
+    }
+
+    div#services {
+        padding-bottom: 50px;
+    }
+    div#services h4 {
+        font-size: 30px;
+    }
+    div#services p {
+        font-size: 21px;
+    }
+    span.small-logo {
+        font-size: 70px;
+    }
+
+
+    div#about p {
+        line-height: 38px;
+    }
+
+
+
+    div#resources h3 {
+        font-size: 26px;
+    }
+    div#resources p {
+        font-size: 20px;
+    } 
+    div#resources div.row {
+        margin: 15px 8%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+    div#contact p {
+        font-size: 30px;
+    }
+    div#contact p span{
+        font-size: 40px;
+    }
+    div#contact {
+        margin-bottom: 150px;
+    }
+
 }

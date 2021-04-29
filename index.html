@@ -2,150 +2,253 @@
 <html>
 <head>
 
-    <! Site Summary: This is a professional website for a local consultant. It contains a nav bar, an about section, an trainings section, 
-    an informative resources section, and a contact section. !>
+    <!--Site Summary: This is a professional website for a local consultant. It contains a nav bar, an about section, an trainings section, 
+    an informative resources section, and a contact section.-->
 
     <title> Amie Carter Consulting </title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright:400,600|Roboto:300,400,700" rel="stylesheet">
 
-       
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright:400,600|Roboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
                         
         <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         
-   
 </head>
 
-<body>
+<body style="background-color:#a1b5c3;" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<!******************************************************************************* Header/Navigation ***********************************************************************************>
-    
-    <header id="amie_header"> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
 
-        <img id="amie_image" src="img/amie-carter2.png" alt="Amie Carter Image"/>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
 
-        <div class="hover_space">
+                </div>
 
-            <div id="nav"> 
-                <ul>
-                    <li><a href ="#service_header"> Services </a> </li>
-                    <li><a href="#about_header"> About </a></li>
-                    <li><a href="#resources_header"> Resources </a></li>
-                    <li><a href="#contact_header"> Contact </a></li>
-                </ul>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#resources">RESOURCES</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
-        
+            </nav>
 
-            <h1 id="box"> <span>Amie Carter</span> </br> Organizational Change Consultant </h1>
+    <div class="jumbotron">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-sm-5 col-md-5">
+                    <img id="amie_image" src="img/amie-carter2.png" alt="Amie Carter Image"/>
+                </div>
+
+                <div class="col-sm-7 col-md-7 col-lg-7 text-center" id="name">
+                    <h1 style="color: #3f3f3f;">Amie Carter <small>Ed.D</small></h1>
+                    <h2 class="slideanim">Organizational Change Consultant</h2>
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
-    </header>
 
-<!******************************************************************************* Services ***********************************************************************************>
+    <div id="services" class="container-fluid text-center">
 
-    <h3 id="service_header"> Services </h3>
-    <section class="services"> 
+        <div class="row">
+            <h2>SERVICES</h2>
+        </div>
 
+        <div class="row">
+
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+
+                <div class="col-sm-4 slideanim">
+                    <div>
+                        <span class="fa fa-microphone small-logo" aria-hidden="true"></span>
+                        <h4>Motivational Speaking</h4>
+                        <p>Motivating, inspiring, and captivating students, educators and profesionals</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 slideanim">
+                    <div>
+                        <span class="fas fa-chalkboard-teacher small-logo" aria-hidden="true"></span>
+                        <h4>Organizational Trainings</h4>
+                        <p>Enhance productivity and efficiency with customized trainings</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 slideanim">
+                    <div>
+                        <span class="fa fa-briefcase small-logo" aria-hidden="true"></span>
+                        <h4>Consulting Services</h4>
+                        <p>Helping educators, bussinesses, and teams successfuly adapt to change</p>
+                    </div>
+                </div>
+
+            </div> 
+
+        </div>
+
+    </div>
+
+    <div id="about" class="container-fluid">
+       
+
+        <div class="row">
+
+            
+            <h2>ABOUT ME</h2>
+
+            <div class="col-sm-12 col-md-10 col-md-offset-1">  
 
         
-        <a href="https://www.google.com/" target="_blank">
-        <div>
-            <i class="fa fa-microphone" aria-hidden="true"></i>
-            <h4 id="motivational"> Motivational Speaking </h4>
+                <div class="col-sm-6">
+                    <p>Adaptable, collaborative, and transformational leader with a proven record of generating and building relationships, 
+                        managing projects from concept to completion, and coaching individuals to success.
+                        Skilled in working with cross-functional teams, creating effective presentations, learning management systems, 
+                        and adult education theory.
+                </p>
+                </div>
+
+                <div class="col-sm-6 text-center" id="arrow" data-toggle="collapse" data-target="#demo">
+                    <span class="glyphicon glyphicon-chevron-down medium-logo" ></span>
+                </div>
+
+                <div id="demo" class="collapse">
+
+                    <div class="col-sm-6" id="second-paragraph"> 
+                        <p>Received a Doctor of Education (Ed.D.) in Organizational Change and Leadership in 2018 after 
+                            earning a Master's of Education, with emphasis on Leadership and Administration. 
+                        </p>
+                        <p>Passionate tennis player, adventurer and world-traveler. Lover of good food and bold wine. </p>
+                    </div>
+
+                </div>
+
+                
+                   
+
+            </div>
+
         </div>
-        </a>
 
-        <a href="https://www.google.com/" target="_blank">
-        <div> 
-            <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> 
-            <h4 id="trainings"> Organizational Trainings </h4>
+    </div>
+
+    <div id="resources" class="container-fluid">
+
+        <h2>RESOURCES</h2>
+
+        <div class="row">
+
+
+            <div class="col-sm-4 slideanim">
+                <a>
+                    <div class="source">
+                        <h3>Margaret Wheatley</h3>
+                        <p>Author who encourages leader ges leadership annge  f ges leadership and change witha  f ges leadership and change witha  f ges leadership and chaitha  fabulous flaire...</p>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="col-sm-4 slideanim">
+                <a> 
+                    <div class="source">
+                        <h3>Teach and Preach</h3>
+                        <p>A blog by an organized ized and, with emphized and creative teacher, with emphized and creative teacher, with emph and creative teacher, with emphasis on change...</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4 slideanim">
+                <a>
+                    <div class="source"> 
+                        <h3>McJagger Research</h3>
+                        <p>Delving deep into the ocean of cwith emng tehe ocean of change updating tehe ocean of change updating tehe ocean of change updating tehe ocof chaand...</p>
+                    </div>
+
+                </a>
+            </div>
+
         </div>
-        </a>
 
-        <a href="https://www.google.com/" target="_blank">
-        <div>
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
-            <h4 id="consulting"> Consulting Services </h4>
+    </div>
+
+    <div id="contact" class="container-fluid">
+        <div class="row">
+
+            <h2>Contact</h2>
+
+            <div class="col-sm-12 text-center">
+                <p>
+                    <span class="slideanim">amiercarter@yahoo.com</span>
+                    <br>Or find me on <a href="https://www.linkedin.com/in/amie-carter-3896a62b/">LinkedIn <i class="fab fa-linkedin"></i></a>
+                </p>
+            </div>
+ 
+    
+
         </div>
-        </a>
-
-    </section>
-
-    <!******************************************************************************* About ***********************************************************************************>
-
-    <h3 id="about_header"> About Me </h3>
-    <section id="about_amie">
-
-        <p> Description about my skills, abilities, who I can help, why I want to help. This is where
-            I will sell myself like a boss. This is where I tell them what I want to tell them. 
-            For all intents and purposes. It’s the best place here!...
-        </p>
-        <p> Description about my skills, abilities, who I can help, why I want to help. This is where
-            I will sell myself like a boss. This is where I tell them what I want to tell them. 
-            For all intents and purposes. It’s the best place here!...
-        </p>
-
-    </section>
+    </div>
 
 
-    <!******************************************************************************* Resources ***********************************************************************************>
-
-    <h3 id="resources_header"> Resources </h3>
-    <section id="resources">
-
-        <a href="https://www.google.com/" target="_blank">
-        <div class="resource">
-            <h4> Margaret Wheatley </h4>
-            <p> Author who encourages leadership and change with a fabulous flaire... </p>
-        </div>
-        </a>
-
-        <a href="https://www.google.com/" target="_blank">
-        <div class="resource">
-            <h4> Teach and Preach </h4>
-            <p> A Blog by an organized and creative teacher, with an emphasis... </p>
-        </div>
-        </a>
-
-        <a href="https://www.google.com/" target="_blank">
-        <div class="resource">
-            <h4> Research by McJagger </h4>
-             <p> Delving deep into the ocean of change and consistancy... </p>
-        </div>
-        </a>
-
-        <a href="https://www.google.com/" target="_blank">
-        <div id="more_link">
-            <p> See More... </p>
-        </div>
-        </a>
-
-
-    </section>
-
-
-    <!******************************************************************************* Contact ***********************************************************************************>
-
-    <h3 id="contact_header"> Contact </h3>
-    <section id="contact">
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== ""){
+                // Prevent default anchor click behavior
+                event.preventDefault();
         
-        <p> Need assistance with change or organization? </p>
-        <h3> AmieRCarter@gmail.com </h3>
+                // Store hash
+                var hash = this.hash;
+        
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 900, function(){
+            
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                });
+            } // End if
+            });
+        })
+    
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+        
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("slide");
+            }
+            });
+        });
 
-    </section>   
-
-    <footer>
-        <p> The only thing constant in life is change. </br> -Some Person </p>
-    </footer>
-
-
+    </script>
 
 </body>
+
 </html>
+
